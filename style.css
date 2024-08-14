@@ -54,6 +54,9 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+nav .bx{
+    display: none;
+}
 .logo{
     width: 140px;
     font-size: 30px;
@@ -195,7 +198,10 @@ margin: 10px 0;
 .tab-contents.active-tab{
     display: block;
 }
-/*project section*/
+
+
+
+/* ---------project section----------- */
 #portfolio{
     padding: 50px 0;
 }
@@ -274,34 +280,32 @@ transition: height 0.5s;
     background: #ff004f;
 }
 
-/*contact section*/
+/* -------------contact section --------------- */
+
 .contact-left{
-    margin-top: 20px;
     flex-basis: 35%;
 }
 .contact-right{
-    margin-top: 20px;
     flex-basis: 60%;
 }
 .contact-left p{
     margin-top: 30px;
-    font-size: 18px;
 }
 .contact-left p i{
+   /* color: #ff004f;*/
     margin-right: 15px;
     font-size: 25px;
 }
-
 .social-icons{
-margin-top: 30px;
+    margin-top: 30px;
 }
 .social-icons a{
-text-decoration: none;
-font-size: 30px;
-margin-right: 15px;
-color: #ababab;
-display: inline-block;
-transition: transform 0.5s;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
 }
 .social-icons a:hover{
     color: #ff004f;
@@ -314,7 +318,7 @@ transition: transform 0.5s;
 .contact-right form{
     width: 100%;
 }
-form input, form textarea{
+form input,form textarea{
     width: 100%;
     border: 0;
     outline: none;
@@ -337,17 +341,14 @@ form .btn2{
     padding: 25px 0;
     background: #262626;
     font-weight: 300;
-    margin-top: -20px;
+    margin-top: 20px;
 }
 .copyright i{
     color: #ff004f;
 }
+
+
 /* media query*/
-nav .bx{
-    display: none;
-}
-
-
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(./image/mobile.jpeg);
